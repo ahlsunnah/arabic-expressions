@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'emoticons';
+  src: url("font/emoticons.eot");
+  src: url("font/emoticons.eot?#iefix") format('embedded-opentype'),
+       url("font/emoticons.woff") format('woff'),
+       url("font/emoticons.ttf") format('truetype'),
+       url("font/emoticons.svg#emoticons") format('svg');
+}
+[class^="icon-emo-"]:before,
+[class*=" icon-emo-"]:before {
+  font-family: 'emoticons';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  opacity: 0.8;
+/* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+/* Animation center compensation - magrins should be symmetric */
+/* remove if not needed */
+  margin-left: 0.2em;
+/* you can be more comfortable with increased icons size */
+/* font-size: 120%; */
+}
+
+.icon-emo-happy:before { content: '\e800'; } /* '' */
+.icon-emo-unhappy:before { content: '\e802'; } /* '' */
+.icon-emo-sleep:before { content: '\e803'; } /* '' */
+.icon-emo-thumbsup:before { content: '\e804'; } /* '' */
+.icon-emo-devil:before { content: '\e805'; } /* '' */
+.icon-emo-surprised:before { content: '\e806'; } /* '' */
+.icon-emo-tongue:before { content: '\e807'; } /* '' */
+.icon-emo-coffee:before { content: '\e808'; } /* '' */
+.icon-emo-sunglasses:before { content: '\e809'; } /* '' */
+.icon-emo-displeased:before { content: '\e80a'; } /* '' */
+.icon-emo-beer:before { content: '\e80b'; } /* '' */
+.icon-emo-grin:before { content: '\e80c'; } /* '' */
+.icon-emo-angry:before { content: '\e80d'; } /* '' */
+.icon-emo-saint:before { content: '\e80e'; } /* '' */
+.icon-emo-cry:before { content: '\e80f'; } /* '' */
+.icon-emo-shoot:before { content: '\e810'; } /* '' */
+.icon-emo-laugh:before { content: '\e812'; } /* '' */
+.icon-emo-wink2:before { content: '\e813'; } /* '' */
