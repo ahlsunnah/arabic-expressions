@@ -3,7 +3,7 @@
 Plugin Name: Font Emoticons
 Plugin URI:
 Description: Replace the standard WP Smileys with font icons.
-Version: 1.0.0
+Version: 1.1
 Author: Sebastian Krysmanski
 Author URI: http://manski.net
 */
@@ -11,15 +11,30 @@ Author URI: http://manski.net
 class FontEmoticonInfo {
   private $name;
   private $text_reps;
+  private $regex;
 
   public function __construct($name, $text_reps) {
     $this->name = $name;
     $this->text_reps = $text_reps;
+
+    $this->regex = '';
+    $is_first = true;
+    foreach ($text_reps as $smiley) {
+      if ($is_first) {
+        $is_first = false;
+      }
+      else {
+        $this->regex .= '|';
+      }
+      $this->regex .= preg_quote($smiley, '/');
+    }
+
+    $this->regex = '/(\s+)(?:'.$this->regex.')(\s+)/U';
   }
 
   public function insert_emots($post_text) {
-    $code = '<span class="icon-emo-'.$this->name.'"/>';
-    return str_replace($this->text_reps, $code, $post_text);
+    $code = '\\1<span class="icon-emo-'.$this->name.'"/>\\2';
+    return preg_replace($this->regex, $code, $post_text);
   }
 }
 
@@ -98,13 +113,24 @@ class FontEmoticons {
   }
 
   public function replace_emots($content) {
+    # surround content with white space so that regexps match emoticons at the beginning and the end
+    # of the content correctly.
+    $content = ' '.$content.' ';
+
+    #echo "<!--$content-->";
+
     $content = $this->mask_content($content);
+
+    #echo "<!--$content-->";
 
     foreach ($this->emots as $emot) {
       $content = $emot->insert_emots($content);
     }
 
     $content = $this->unmask_content($content);
+
+    # Remove spaces added at the beginning.
+    $content = substr($content, 1, -1);
 
     return $content;
   }
@@ -117,9 +143,22 @@ class FontEmoticons {
   }
 
   public function mask_content_replace_callback($matches) {
+    $matched_text = $matches[0];
     $id = count($this->placeholders);
-    $this->placeholders[] = $matches[0];
-    return $this->SECTION_MASKING_START_DELIM.$id.$this->SECTION_MASKING_END_DELIM;
+    $this->placeholders[] = $matched_text;
+    $ret = $this->SECTION_MASKING_START_DELIM.$id.$this->SECTION_MASKING_END_DELIM;
+
+    # At this stage, line break characters have already been replaced with <p> and <br> elements. Surround them with
+    # spaces to enable emoticon detection. Also, surround HTML comments with spaces.
+    #
+    # NOTE: At the moment I can't imagine a reason where adding white space around those element would cause any
+    #  trouble. I might be wrong though.
+    #
+    # NOTE 2: The first regexp must match <p>, </p> as well as <br />.
+    if (preg_match('#^<[/]?(?:p|br)\s*(?:/\s*)?>$#iU', $matched_text) || preg_match('/<!--.*-->/sU', $matched_text)) {
+      $ret = ' '.$ret.' ';
+    }
+    return $ret;
   }
 
   private function unmask_content($content) {
