@@ -3,7 +3,7 @@
 Plugin Name: Font Emoticons
 Plugin URI:
 Description: Replace the standard WP Smileys with font icons.
-Version: 1.1
+Version: 1.2
 Author: Sebastian Krysmanski
 Author URI: http://manski.net
 */
@@ -94,6 +94,9 @@ class FontEmoticons {
     update_option('use_smilies', 0);
 
     add_filter('the_content', array($this, 'replace_emots'), 500);
+    add_filter('the_excerpt', array($this, 'replace_emots'), 500);
+    add_filter('get_comment_text', array($this, 'replace_emots'), 500);
+    add_filter('get_comment_excerpt', array($this, 'replace_emots'), 500);
     if (!is_admin()) {
       add_action('wp_print_styles', array($this, 'enqueue_stylesheets_callback'));
     }

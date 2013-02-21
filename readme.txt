@@ -3,7 +3,7 @@ Contributors: manski
 Tags: smileys, emoticons
 Requires at least: 3.0.0
 Tested up to: 3.5.0
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -57,6 +57,9 @@ This section describes how to install the plugin and get it working.
 2. Emoticon comparison.
 
 == Changelog ==
+
+= 1.2 =
+* Emoticons are now supported in comments and excerpts.
 
 = 1.1 =
 * Emoticons are no longer replaced in URLs. Instead they now require surrounding white space.
