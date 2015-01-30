@@ -43,7 +43,7 @@ class FontEmoticonInfo
                        . '(?:' . $this->m_regex . ')'
                        . '(?=\s|$|' . FontEmoticonsPlugin::DELIM_CHARS . ')/U';
 
-        $this->m_htmlCode = '<span class="' . self::EMOTS_BASE_CLASS_NAME . $name . '"/>';
+        $this->m_htmlCode = '<span class="' . self::EMOTS_BASE_CLASS_NAME . $name . '"></span>';
     }
 
     public function replaceTextEmots($postText)

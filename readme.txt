@@ -3,7 +3,7 @@ Contributors: manski
 Tags: smileys, emoticons
 Requires at least: 3.0.0
 Tested up to: 4.1.0
-Stable tag: 1.3
+Stable tag: 1.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -69,6 +69,9 @@ This section describes how to install the plugin and get it working.
 2. Emoticon comparison.
 
 == Changelog ==
+
+= 1.3.1 =
+* Fix: Self closing span (`<span/>`) seems to be invalid in some cases. Replaced it with regular `<span></span>` (issue #8)
 
 = 1.3 =
 * Feature: New emoticon "squint": `|)` or `:squint:`

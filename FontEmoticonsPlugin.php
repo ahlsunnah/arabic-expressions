@@ -7,7 +7,7 @@ require_once(dirname(__FILE__) . '/FontEmoticonInfo.php');
  */
 class FontEmoticonsPlugin
 {
-    const VERSION = '1.3';
+    const VERSION = '1.3.1';
 
     // Should be unique enough to not usually appear in a text and must not have any meaning in regex.
     const DELIM_CHARS = '@@';
