@@ -3,7 +3,7 @@
 Plugin Name: Font Emoticons
 Plugin URI: https://wordpress.org/plugins/font-emoticons/
 Description: Replace the standard WP Smileys with font icons.
-Version: 1.4.0
+Version: 1.4.1
 Author: Sebastian Krysmanski
 Author URI: http://manski.net
 */

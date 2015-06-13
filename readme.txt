@@ -3,7 +3,7 @@ Contributors: manski
 Tags: smileys, emoticons
 Requires at least: 3.0.0
 Tested up to: 4.2.2
-Stable tag: 1.4.0
+Stable tag: 1.4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -70,6 +70,9 @@ This section describes how to install the plugin and get it working.
 
 == Changelog ==
 
+= 1.4.1 =
+* Feature: Added general purpose filter called `wp_font_emots_replace`. This filter can be used to replace emoticons in places not supported by this plugin.
+
 = 1.4.0 =
 * Feature: Implemented rudimentary bbpress support. I don't use bbpress, so some parts may still no display emoticons correctly. (issue #10)
 * Feature: Emoticons are now also replace in the text sidebar widget.
@@ -97,6 +100,22 @@ This section describes how to install the plugin and get it working.
 
 = 1.0 =
 * First release.
+
+== Use In Themes/Plugins ==
+Font Emoticons are supported in most places where user defined text is displayed. However, there may be places in a
+plugin or theme that are not supported by Font Emoticons.
+
+In these cases, just apply the filter **wp_font_emots_replace** to the text that should display Font Emoticons.
+
+For example, you would change the following PHP code:
+
+`<?php echo get_the_author_meta( 'description' ); ?>`
+
+to this code:
+
+`<?php echo apply_filters('wp_font_emots_replace', get_the_author_meta( 'description' )); ?>`
+
+That's it.
 
 == Font Licenses ==
 The emoticons used in this plugin are based on the fonts "Fontelico" and "Font Awesome".

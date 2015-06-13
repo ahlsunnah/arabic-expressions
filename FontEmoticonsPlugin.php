@@ -7,7 +7,7 @@ require_once(dirname(__FILE__) . '/FontEmoticonInfo.php');
  */
 class FontEmoticonsPlugin
 {
-    const VERSION = '1.4.0';
+    const VERSION = '1.4.1';
 
     // Should be unique enough to not usually appear in a text and must not have any meaning in regex.
     const DELIM_CHARS = '@@';
@@ -88,6 +88,7 @@ class FontEmoticonsPlugin
         {
             $replaceEmotCallback = array($this, 'replace_emots');
 
+            # Common Wordpress filters
             add_filter('the_content', $replaceEmotCallback, 500);
             add_filter('the_excerpt', $replaceEmotCallback, 500);
             add_filter('get_comment_text', $replaceEmotCallback, 500);
@@ -95,7 +96,11 @@ class FontEmoticonsPlugin
 
             add_filter('widget_text', $replaceEmotCallback, 500);
 
-            # bbpress
+            # Custom Plugin Filter
+            # Can be used by theme/plugin authors to replace emoticons in not supported places.
+            add_filter('wp_font_emots_replace', $replaceEmotCallback, 500);
+
+            # bbpress filters
             add_filter('bbp_get_topic_content', $replaceEmotCallback, 500);
             add_filter('bbp_get_reply_content', $replaceEmotCallback, 500);
 
