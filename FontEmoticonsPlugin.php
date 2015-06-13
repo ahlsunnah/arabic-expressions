@@ -7,7 +7,7 @@ require_once(dirname(__FILE__) . '/FontEmoticonInfo.php');
  */
 class FontEmoticonsPlugin
 {
-    const VERSION = '1.3.1';
+    const VERSION = '1.4.0';
 
     // Should be unique enough to not usually appear in a text and must not have any meaning in regex.
     const DELIM_CHARS = '@@';
@@ -86,10 +86,18 @@ class FontEmoticonsPlugin
 
         if (!is_admin())
         {
-            add_filter('the_content', array($this, 'replace_emots'), 500);
-            add_filter('the_excerpt', array($this, 'replace_emots'), 500);
-            add_filter('get_comment_text', array($this, 'replace_emots'), 500);
-            add_filter('get_comment_excerpt', array($this, 'replace_emots'), 500);
+            $replaceEmotCallback = array($this, 'replace_emots');
+
+            add_filter('the_content', $replaceEmotCallback, 500);
+            add_filter('the_excerpt', $replaceEmotCallback, 500);
+            add_filter('get_comment_text', $replaceEmotCallback, 500);
+            add_filter('get_comment_excerpt', $replaceEmotCallback, 500);
+
+            add_filter('widget_text', $replaceEmotCallback, 500);
+
+            # bbpress
+            add_filter('bbp_get_topic_content', $replaceEmotCallback, 500);
+            add_filter('bbp_get_reply_content', $replaceEmotCallback, 500);
 
             add_action('wp_print_styles', array($this, 'enqueue_stylesheets_callback'));
         }
@@ -106,9 +114,8 @@ class FontEmoticonsPlugin
 
     public function enqueue_stylesheets_callback()
     {
-        // Add the version here so that browser pick up the new CSS file more reliably.
-        wp_register_style('emoticons', WP_PLUGIN_URL . '/font-emoticons/emoticons.css?v=' . self::VERSION);
-        wp_enqueue_style('emoticons');
+        wp_register_style('wp-font-emoticons', plugins_url('emoticons.css', __FILE__));
+        wp_enqueue_style('wp-font-emoticons');
     }
 
     public function replace_emots($content)

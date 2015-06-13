@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Represents a single font emoticon (together with all of its text representations).
+ * Represents information about a single font emoticon.
  */
 class FontEmoticonInfo
 {

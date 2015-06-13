@@ -2,8 +2,8 @@
 Contributors: manski
 Tags: smileys, emoticons
 Requires at least: 3.0.0
-Tested up to: 4.1.0
-Stable tag: 1.3.1
+Tested up to: 4.2.2
+Stable tag: 1.4.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -69,6 +69,12 @@ This section describes how to install the plugin and get it working.
 2. Emoticon comparison.
 
 == Changelog ==
+
+= 1.4.0 =
+* Feature: Implemented rudimentary bbpress support. I don't use bbpress, so some parts may still no display emoticons correctly. (issue #10)
+* Feature: Emoticons are now also replace in the text sidebar widget.
+* Fix: `emoticons.css` no longer gets an unnecessary `?v=` parameter attached (Wordpress does this automatically on its own); also made the style's name more unique so that it's less likely to conflict with other plugins.
+* Fix: Replaced usage of internal constant `WP_PLUGIN_URL` with `plugins_url()`
 
 = 1.3.1 =
 * Fix: Self closing span (`<span/>`) seems to be invalid in some cases. Replaced it with regular `<span></span>` (issue #8)
