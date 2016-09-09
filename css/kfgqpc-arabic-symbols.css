@@ -1,0 +1,136 @@
+@font-face {
+  font-family: 'kfgqpc-arabic-symbols';
+  src: url('../font/kfgqpc-arabic-symbols.eot?7962993');
+  src: url('../font/kfgqpc-arabic-symbols.eot?7962993#iefix') format('embedded-opentype'),
+       url('../font/kfgqpc-arabic-symbols.woff2?7962993') format('woff2'),
+       url('../font/kfgqpc-arabic-symbols.woff?7962993') format('woff'),
+       url('../font/kfgqpc-arabic-symbols.ttf?7962993') format('truetype'),
+       url('../font/kfgqpc-arabic-symbols.svg?7962993#kfgqpc-arabic-symbols') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'kfgqpc-arabic-symbols';
+    src: url('../font/kfgqpc-arabic-symbols.svg?7962993#kfgqpc-arabic-symbols') format('svg');
+  }
+}
+*/
+
+ [class^="as-"]:before, [class*=" as-"]:before {
+  font-family: "kfgqpc-arabic-symbols";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* you can be more comfortable with increased icons size */
+   font-size: 110%;
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.as-basmallah:before { content: '\e800'; }
+.as-basmallah2:before { content: '\e801'; }
+.as-basmallah3:before { content: '\e802'; }
+.as-asmaullah:before { content: '\e803'; }
+.as-allah:before { content: '\e804'; }
+.as-tamma:before { content: '\e805'; }
+.as-quran:before { content: '\e806'; }
+.as-allahuakbar:before { content: '\e807'; }
+.as-jallajalaaluhu:before { content: '\e808'; }
+.as-jallawa3ala:before { content: '\e809'; }
+.as-3azzawajalla:before { content: '\e80a'; }
+.as-sub7anah:before { content: '\e80b'; }
+.as-tabaraka:before { content: '\e80c'; }
+.as-sallallahu3alayh2:before { content: '\e80d'; }
+.as-sallallahu3alayh:before { content: '\e80e'; }
+.as-radiyallahu3anhu:before { content: '\e80f'; }
+.as-radiyallahu3anha:before { content: '\e810'; }
+.as-radiyallahu3anhunna:before { content: '\e811'; }
+.as-radiyallahu3anhuma:before { content: '\e812'; }
+.as-radiyallahu3anhum:before { content: '\e813'; }
+.as-sallallahu3alayh4:before { content: '\e814'; }
+.as-sallallahu3alayh3:before { content: '\e815'; }
+.as-3alayhassalam:before { content: '\e816'; }
+.as-3alayhimussalam:before { content: '\e817'; }
+.as-3alayhimassalam:before { content: '\e818'; }
+.as-3alayhissalam:before { content: '\e819'; }
+.as-ra7imahallah:before { content: '\e81a'; }
+.as-ra7imahunnallah:before { content: '\e81b'; }
+.as-ra7imahullah:before { content: '\e81c'; }
+.as-ra7imahumallah:before { content: '\e81d'; }
+.as-ra7imahumullah:before { content: '\e81e'; }
+.as-muqaddimah:before { content: '\e81f'; }
+.as-fihris:before { content: '\e820'; }
+.as-fasl:before { content: '\e821'; }
+.as-tamhid:before { content: '\e822'; }
+.as-tammat:before { content: '\e823'; }
+.as-bab:before { content: '\e824'; }
+.as-juz:before { content: '\e825'; }
+.as-tahanina:before { content: '\e826'; }
+.as-allahuakbar2:before { content: '\e827'; }
+.as-3azzawajalla2:before { content: '\e828'; }
+.as-sub7anah2:before { content: '\e829'; }
+.as-jallajalaaluhu2:before { content: '\e82a'; }
+.as-jallawa3ala2:before { content: '\e82b'; }
+.as-tabaraka2:before { content: '\e82c'; }
+.as-sallallahu3alayh5:before { content: '\e82d'; }
+.as-radiyallahu3anhu2:before { content: '\e82e'; }
+.as-radiyallahu3anha2:before { content: '\e82f'; }
+.as-radiyallahu3anhum2:before { content: '\e830'; }
+.as-radiyallahu3anhuma2:before { content: '\e831'; }
+.as-radiyallahu3anhunna2:before { content: '\e832'; }
+.as-sallallahu3alayh6:before { content: '\e833'; }
+.as-3alayhissalam2:before { content: '\e834'; }
+.as-3alayhassalam2:before { content: '\e835'; }
+.as-3alayhimussalam2:before { content: '\e836'; }
+.as-3alayhimassalam2:before { content: '\e837'; }
+.as-ra7imahullah2:before { content: '\e838'; }
+.as-ra7imahumullah2:before { content: '\e839'; }
+.as-ra7imahumallah2:before { content: '\e83a'; }
+.as-ra7imahallah2:before { content: '\e83b'; }
+.as-ra7imahunnallah2:before { content: '\e83c'; }
+.as-7izb:before { content: '\e83d'; }
+.as-rubu3:before { content: '\e83e'; }
+.as-thumun:before { content: '\e83f'; }
+.as-sabt:before { content: '\e840'; }
+.as-a7ad:before { content: '\e841'; }
+.as-ithnayn:before { content: '\e842'; }
+.as-thulatha:before { content: '\e843'; }
+.as-arba3a:before { content: '\e844'; }
+.as-khamis:before { content: '\e845'; }
+.as-jumu3a:before { content: '\e846'; }
+.as-mu7arram:before { content: '\e847'; }
+.as-safar:before { content: '\e848'; }
+.as-rabi31:before { content: '\e849'; }
+.as-rabi32:before { content: '\e84a'; }
+.as-jumada1:before { content: '\e84b'; }
+.as-jumada2:before { content: '\e84c'; }
+.as-rajab:before { content: '\e84d'; }
+.as-cha3ban:before { content: '\e84e'; }
+.as-ramadan:before { content: '\e84f'; }
+.as-chawal:before { content: '\e850'; }
+.as-dhulqa3da:before { content: '\e851'; }
+.as-dhul7jja:before { content: '\e852'; }
+.as-3idmubarak:before { content: '\e853'; }
+.as-3idsa3id:before { content: '\e854'; }
+.as-mu7tawiyat:before { content: '\e855'; }
