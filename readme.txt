@@ -46,18 +46,20 @@ If you are using composer as a package manager you can install using :
 1. Activate the plugin through the 'Plugins' menu in WordPress or if you are using **wp-cli** : `wp plugin activate arabic-symbols`
 
 == Frequently Asked Questions ==
+
 = Arabic Symbols don't parse the keywords in some place my Theme/Plugin =
-> Arabic Symbols are supported in most places where user defined text is displayed. However, there may be places in a plugin or theme that are not supported by Arabic Symbols.
 
-> In these cases, just apply the filter `arabic_symbols_replace` to the text that should display Arabic Symbols.
+Arabic Symbols are supported in most places where user defined text is displayed. However, there may be places in a plugin or theme that are not supported by Arabic Symbols.
 
-> For example, you would change the following PHP code:
+In these cases, just apply the filter `arabic_symbols_replace` to the text that should display Arabic Symbols.
 
-> `<?php echo get_the_author_meta( 'description' ); ?>`
+For example, you would change the following PHP code:
 
-> to this code:
+`<?php echo get_the_author_meta( 'description' ); ?>`
 
-> `<?php echo apply_filters('arabic_symbols_replace', get_the_author_meta( 'description' )); ?>`
+to this code:
+
+`<?php echo apply_filters('arabic_symbols_replace', get_the_author_meta( 'description' )); ?>`
 
 == Screenshots ==
 
@@ -71,6 +73,7 @@ If you are using composer as a package manager you can install using :
   * Replaced [Font Emoticons](https://wordpress.org/plugins/font-emoticons/)'s fonts and css files by [KFGQPC Arabic Symbols](http://fonts.qurancomplex.gov.sa/?page_id=486) font generated with [Fontello](http://fontello.com/)
   * Changed plugin name, files names, functions names, variables and texts from `font emoticon` to `arabic symbols`
   * Changed symbols keywords names
+  * Remove unused code
   * Add composer.json to make it available for installation with composer as a WordPress plugin
   * Added text license to the project
   * Modified readme.txt intensively
