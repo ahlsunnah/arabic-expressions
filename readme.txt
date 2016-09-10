@@ -30,10 +30,16 @@ This plugin is a fork of [Font Emoticons](https://wordpress.org/plugins/font-emo
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
+= Manual Installation =
 
 1. Upload the `arabic-symbols` directory to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
+
+= Composer Installation =
+
+If you are using composer as a package manager you can install using :
+1. `composer require ahlsunnah/arabic-symbols`
+1. Activate the plugin through the 'Plugins' menu in WordPress or if you are using **wp-cli** : `wp plugin activate arabic-symbols`
 
 == Frequently Asked Questions ==
 = Arabic Symbols don't parse the keywords in some place my Theme/Plugin =
@@ -61,6 +67,7 @@ This section describes how to install the plugin and get it working.
   * Replaced [Font Emoticons](https://wordpress.org/plugins/font-emoticons/)'s fonts and css files by [KFGQPC Arabic Symbols](http://fonts.qurancomplex.gov.sa/?page_id=486) font generated with [Fontello](http://fontello.com/)
   * Changed plugin name, files names, functions names, variables and texts from `font emoticon` to `arabic symbols`
   * Changed symbols keywords names
+  * Add composer.json to make it available for installation with composer as a WordPress plugin
   * Added text license to the project
   * Modified readme.txt intensively
 

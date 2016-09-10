@@ -1,0 +1,30 @@
+{
+    "name": "ahlsunnah/arabic-symbols",
+    "type": "wordpress-plugin",
+    "license": "GPLv2 or later",
+    "description": "This WordPress plugin adds KFGQPC Arabic Symbols to WordPress and provides a simple way to add the symbols to you posts and pages.",
+    "homepage": "http://github.com/ahlsunnah/arabic-symbols",
+    "authors": [
+        {
+            "name": "ahlsunnah",
+            "email": "abdullah@ahlsunnah.com",
+            "homepage": "http://github.com/ahlsunnah"
+        }
+    ],
+    "keywords": "wordpress",
+    "support": {
+      "issues": "http://github.com/ahlsunnah/arabic-symbols/issues"
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "composer/installers": "~1.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^2.7"
+    },
+    "scripts": {
+        "test":[
+            "vendor/bin/phpcs --extensions=php --ignore=vendor/ -n -s ."
+        ]
+    }
+}
