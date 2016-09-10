@@ -10,9 +10,14 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Include arabic symbols to be added to posts easily.
 
 == Description ==
-This plugin adds [KFGQPC Arabic Symbols](http://fonts.qurancomplex.gov.sa/?page_id=486) to wordpress and provides a simple way to add the symbols to you posts and pages.
 
-= Notes: =
+This WordPress plugin adds [KFGQPC Arabic Symbols](http://fonts.qurancomplex.gov.sa/?page_id=486) to WordPress and provides a simple way to add the symbols to you posts and pages.
+
+= Available Symbols =
+
+The Available Symbols can be viewed in the *Screenshots* section.
+
+= Notes =
 
 * Symbol keyword must be surrounded with spaces characters; e.g. the symbol keyword in `-sallallahu3alayh-` won't be replaced.
 * Symbols keywords won't be replaced in HTML tags nor inside of `<pre>` or `<code>` blocks.
@@ -21,16 +26,11 @@ This plugin is a fork of [Font Emoticons](https://wordpress.org/plugins/font-emo
 
 = Licenses =
 
-*Arabic Symbols*
+Arabic Symbols: GPLv2 or later
 
-Plugin License: GPLv2 or later
-
-*KFGQPC Arabic Symbols*
-
-The fonts are generated from
+KFGQPC Arabic Symbols: Copyright (C) 2015 All right reserved to King Fahd Complex For Printing of The Holy Qur'an
+> The fonts are generated from
 [KFGQPC Arabic Symbols](http://fonts.qurancomplex.gov.sa/?page_id=486) font that belong to **King Fahd Complex For Printing of The Holy Qur'an of Madinah in Saudi Arabia**. It is downloadable freely on [their website](http://fonts.qurancomplex.gov.sa/?page_id=486).
-
-Copyright (C) 2015 All right reserved to King Fahd Complex For Printing of The Holy Qur'an
 
 == Installation ==
 
@@ -42,6 +42,7 @@ Copyright (C) 2015 All right reserved to King Fahd Complex For Printing of The H
 = Composer Installation =
 
 If you are using composer as a package manager you can install using :
+
 1. `composer require ahlsunnah/arabic-symbols`
 1. Activate the plugin through the 'Plugins' menu in WordPress or if you are using **wp-cli** : `wp plugin activate arabic-symbols`
 
