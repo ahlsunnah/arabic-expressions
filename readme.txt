@@ -63,7 +63,92 @@ to this code:
 
 == Screenshots ==
 
-1. Available symbols.
+1. `basmallah1` : بسم الله الرحمن الرحيم
+1. `basmallah2` : بسم الله الرحمن الرحيم
+1. `basmallah3` : بسم الله الرحمن الرحيم
+1. `asmaullah` : أسماء الله الحسنى
+1. `allah1` : الله
+1. `tamma1` : تم بحمد الله
+1. `quran1` : قرآن كريم
+1. `allahuakbar` : الله أكبر
+1. `jallajalaaluhu` : جل جلاله
+1. `jallawa3ala` : جل وعلا
+1. `3azzawajalla` : عز وجل
+1. `sub7anah` : سبحانه وتعالى
+1. `tabaraka` : تبارك وتعالى
+1. `sallallahu3alayh2` : صلى الله عليه وعلى آله وسلم
+1. `sallallahu3alayh` : صلى الله عليه وسلم
+1. `radiyallahu3anhu` : رضي الله عنه
+1. `radiyallahu3anha` : رضي الله عنها
+1. `radiyallahu3anhunna` : رضي الله عنهن
+1. `radiyallahu3anhuma` : رضي الله عنهما
+1. `radiyallahu3anhum` : رضي الله عنهم
+1. `sallallahu3alayh4` : عليه وعلى آله الصلاة والسلام
+1. `sallallahu3alayh3` : عليه الصلاة والسلام
+1. `3alayhassalam` : عليها السلام
+1. `3alayhimussalam` : عليهم السلام
+1. `3alayhimassalam` : عليهما السلام
+1. `3alayhissalam` : عليه السلام
+1. `ra7imahallah` : رحمها الله
+1. `ra7imahunnallah` : رحمهن الله
+1. `ra7imahullah` : رحمه الله
+1. `ra7imahumallah` : رحمهما الله
+1. `ra7imahumullah` : رحمهم الله
+1. `muqaddimah1` : مقدمة
+1. `fihris1` : فهرس
+1. `fasl1` : الفصل
+1. `tamhid1` : تمهيد
+1. `tammat1` : تمت
+1. `bab1` : الباب
+1. `juz1` : الجزء
+1. `tahanina1` : تهانينا
+1. `allahuakbar2` : الله أكبر
+1. `3azzawajalla2` : عز وجل
+1. `sub7anah2` : سبحانه وتعالى
+1. `jallajalaaluhu2` : جل جلاله
+1. `jallawa3ala2` : جل وعلا
+1. `tabaraka2` : تبارك وتعالى
+1. `sallallahu3alayh5` : صلى الله عليه وسلم
+1. `radiyallahu3anhu2` : رضي الله عنه
+1. `radiyallahu3anha2` : رضي الله عنها
+1. `radiyallahu3anhum2` : رضي الله عنهم
+1. `radiyallahu3anhuma2` : رضي الله عنهما
+1. `radiyallahu3anhunna2` : رضي الله عنهن
+1. `sallallahu3alayh6` : عليه الصلاة والسلام
+1. `3alayhissalam2` : عليه السلام
+1. `3alayhassalam2` : عليها السلام
+1. `3alayhimussalam2` : عليهم السلام
+1. `3alayhimassalam2` : عليهما السلام
+1. `ra7imahullah2` : رحمه الله
+1. `ra7imahumullah2` : رحمهم الله
+1. `ra7imahumallah2` : رحمهما الله
+1. `ra7imahallah2` : رحمها الله
+1. `ra7imahunnallah2` : رحمهن الله
+1. `7izb1` : الحزب
+1. `rubu3` : الربع
+1. `thumun1` : الثمن
+1. `sabt1` : السبت
+1. `a7ad1` : الأحد
+1. `ithnayn1` : الاثنين
+1. `thulatha1` : الثلاثاء
+1. `arba3a1` : الأربعاء
+1. `khamis1` : الخميس
+1. `jumu3a1` : الجمعة
+1. `mu7arram1` : محرم
+1. `safar1` : صفر
+1. `rabi31` : ربيع الأول
+1. `rabi32` : ربيع الثاني
+1. `jumada1` : جمادى الأولى
+1. `jumada2` : جمادى الآخرة
+1. `rajab1` : رجب
+1. `cha3ban1` : شعبان
+1. `ramadan1` : رمضان
+1. `chawal1` : شوال
+1. `dhulqa3da1` : ذو القعدة
+1. `dhul7jja1` : ذو الحجة
+1. `3idmubarak` : عيد مبارك
+1. `3idsa3id` : عيد سعيد
+1. `mu7tawiyat` : المحتويات
 
 == Changelog ==
 
