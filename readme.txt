@@ -1,34 +1,34 @@
-=== Arabic Symbols ===
+=== Arabic Expressions ===
 Contributors: ahlsunnah
-Tags: arabic symbols, islam
+Tags: arabic expressions, islam
 Requires at least: 3.0.0
 Tested up to: 4.6.1
 Stable tag: 2.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Include arabic symbols to be added to posts easily.
+Include arabic expressions to be added to posts easily.
 
 == Description ==
 
-This WordPress plugin adds [KFGQPC Arabic Symbols](http://fonts.qurancomplex.gov.sa/?page_id=486) to WordPress and provides a simple way to add the symbols to you posts and pages.
+This WordPress plugin adds [KFGQPC Arabic Symbols](http://fonts.qurancomplex.gov.sa/?page_id=486) to WordPress and provides a simple way to add the expressions to you posts and pages.
 
-= Available Symbols =
+= Available expressions =
 
-The Available Symbols can be viewed in the *Screenshots* section.
+The Available expressions can be viewed in the *Screenshots* section.
 
 = Notes =
 
-* Symbol keyword must be surrounded with spaces characters; e.g. the symbol keyword in `-sallallahu3alayh-` won't be replaced.
-* Symbols keywords won't be replaced in HTML tags nor inside of `<pre>` or `<code>` blocks.
+* Expression keyword must be surrounded with spaces characters; e.g. the expression keyword in `-sallallahu3alayh-` won't be replaced.
+* Expressions keywords won't be replaced in HTML tags nor inside of `<pre>` or `<code>` blocks.
 
 This plugin is a fork of [Font Emoticons](https://wordpress.org/plugins/font-emoticons/)
 
 = Licenses =
 
-Arabic Symbols: GPLv2 or later
+Arabic Expressions: GPLv2 or later
 
-KFGQPC Arabic Symbols: Copyright (C) 2015 All right reserved to King Fahd Complex For Printing of The Holy Qur'an
+KFGQPC Arabic expressions: Copyright (C) 2015 All right reserved to King Fahd Complex For Printing of The Holy Qur'an
 > The fonts are generated from
 [KFGQPC Arabic Symbols](http://fonts.qurancomplex.gov.sa/?page_id=486) font that belong to **King Fahd Complex For Printing of The Holy Qur'an of Madinah in Saudi Arabia**. It is downloadable freely on [their website](http://fonts.qurancomplex.gov.sa/?page_id=486).
 
@@ -36,23 +36,23 @@ KFGQPC Arabic Symbols: Copyright (C) 2015 All right reserved to King Fahd Comple
 
 = Manual Installation =
 
-1. Upload the `arabic-symbols` directory to the `/wp-content/plugins/` directory
+1. Upload the `arabic-expressions` directory to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 
 = Composer Installation =
 
 If you are using composer as a package manager you can install using :
 
-1. `composer require ahlsunnah/arabic-symbols`
-1. Activate the plugin through the 'Plugins' menu in WordPress or if you are using **wp-cli** : `wp plugin activate arabic-symbols`
+1. `composer require ahlsunnah/arabic-expressions`
+1. Activate the plugin through the 'Plugins' menu in WordPress or if you are using **wp-cli** : `wp plugin activate arabic-expressions`
 
 == Frequently Asked Questions ==
 
-= Arabic Symbols don't parse the keywords in some place my Theme/Plugin =
+= Arabic Expressions don't parse the keywords in some place my Theme/Plugin =
 
-Arabic Symbols are supported in most places where user defined text is displayed. However, there may be places in a plugin or theme that are not supported by Arabic Symbols.
+Arabic Expressions are supported in most places where user defined text is displayed. However, there may be places in a plugin or theme that are not supported by Arabic Expressions.
 
-In these cases, just apply the filter `arabic_symbols_replace` to the text that should display Arabic Symbols.
+In these cases, just apply the filter `arabic_expressions_replace` to the text that should display Arabic Expressions.
 
 For example, you would change the following PHP code:
 
@@ -60,7 +60,7 @@ For example, you would change the following PHP code:
 
 to this code:
 
-`<?php echo apply_filters('arabic_symbols_replace', get_the_author_meta( 'description' )); ?>`
+`<?php echo apply_filters('arabic_expressions_replace', get_the_author_meta( 'description' )); ?>`
 
 == Screenshots ==
 
@@ -154,11 +154,11 @@ to this code:
 == Changelog ==
 
 = 2.0.0 =
-* First release of Arabic Symbols. It is a fork of the plugin [Font Emoticons](https://wordpress.org/plugins/font-emoticons/) version 1.4.1.
+* First release of Arabic Expressions. It is a fork of the plugin [Font Emoticons](https://wordpress.org/plugins/font-emoticons/) version 1.4.1.
 * Changes in this first release :
   * Replaced [Font Emoticons](https://wordpress.org/plugins/font-emoticons/)'s fonts and css files by [KFGQPC Arabic Symbols](http://fonts.qurancomplex.gov.sa/?page_id=486) font generated with [Fontello](http://fontello.com/)
-  * Changed plugin name, files names, functions names, variables and texts from `font emoticon` to `arabic symbols`
-  * Changed symbols keywords names
+  * Changed plugin name, files names, functions names, variables and texts from `font emoticon` to `arabic expressions`
+  * Changed expressions keywords names
   * Remove unused code
   * Add composer.json to make it available for installation with composer as a WordPress plugin
   * Added text license to the project
