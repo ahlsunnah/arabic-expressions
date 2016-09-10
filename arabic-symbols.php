@@ -4,8 +4,8 @@ Plugin Name: Arabic Symbols
 Plugin URI: https://wordpress.org/plugins/arabic-symbols/
 Description: This plugin adds KFGQPC Arabic Symbols to wordpress and provides a simple way to add the symbols to you posts and pages.
 Version: 2.0.0
-Author: Abdullah Hilson
-Author URI: http://ahlsunnah.com
+Author: ahlsunnah
+Author URI: http://github.com/ahlsunnah/
 */
 
 require_once(dirname(__FILE__).'/ArabicSymbolsPlugin.php');

@@ -1,5 +1,5 @@
 === Arabic Symbols ===
-Contributors: abumalick
+Contributors: ahlsunnah
 Tags: arabic symbols, islam
 Requires at least: 3.0.0
 Tested up to: 4.6.1
@@ -20,13 +20,17 @@ This plugin adds [KFGQPC Arabic Symbols](http://fonts.qurancomplex.gov.sa/?page_
 This plugin is a fork of [Font Emoticons](https://wordpress.org/plugins/font-emoticons/)
 
 = Licenses =
-**Arabic Symbols Plugin**
-> License: GPLv2 or later
 
-**KFGQPC Arabic Symbols**
-> The fonts are generated from
-> [KFGQPC Arabic Symbols](http://fonts.qurancomplex.gov.sa/?page_id=486) font that belong to **King Fahd Complex For Printing of The Holy Qur'an of Madinah in Saudi Arabia**. It is downloadable freely on [their website](http://fonts.qurancomplex.gov.sa/?page_id=486).
-> Copyright (C) 2015 All right reserved to King Fahd Complex For Printing of The Holy Qur'an
+*Arabic Symbols*
+
+Plugin License: GPLv2 or later
+
+*KFGQPC Arabic Symbols*
+
+The fonts are generated from
+[KFGQPC Arabic Symbols](http://fonts.qurancomplex.gov.sa/?page_id=486) font that belong to **King Fahd Complex For Printing of The Holy Qur'an of Madinah in Saudi Arabia**. It is downloadable freely on [their website](http://fonts.qurancomplex.gov.sa/?page_id=486).
+
+Copyright (C) 2015 All right reserved to King Fahd Complex For Printing of The Holy Qur'an
 
 == Installation ==
 
