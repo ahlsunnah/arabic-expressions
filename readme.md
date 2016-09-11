@@ -1,16 +1,6 @@
-
 # Arabic Expressions #
-## بسم الله الرحمن الرحيم ##
-## Wordpress Information
-- Contributors: ahlsunnah
-- Tags: arabic expressions, arabic symbols, islamic expressions, islamic symbols
-- Requires at least: 3.0.0
-- Tested up to: 4.6.1
-- Stable tag: 2.1.0
-- License: GPLv2 or later
-- License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Include arabic expressions to be added to posts easily.
+## بسم الله الرحمن الرحيم ##
 
 ## Description ##
 
@@ -160,6 +150,10 @@ n  | keyword | text | screenshots
 86 | `mu7tawiyat` | المحتويات | ![المحتويات](screenshots/86-mu7tawiyat.jpg)
 
 ## Changelog ##
+
+### 2.1.1 ###
+* Some fixes for composer.json
+* readme changes
 
 ### 2.1.0 ###
 * Changed plugin name to **Arabic Expressions**

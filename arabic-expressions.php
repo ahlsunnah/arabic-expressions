@@ -3,7 +3,7 @@
 Plugin Name: Arabic Expressions
 Plugin URI: https://wordpress.org/plugins/arabic-expressions/
 Description: This plugin adds KFGQPC Arabic Symbols to wordpress and provides a simple way to add the expressions to you posts and pages.
-Version: 2.1.0
+Version: 2.1.1
 Author: ahlsunnah
 Author URI: http://github.com/ahlsunnah/
 */
