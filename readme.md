@@ -164,6 +164,8 @@ n  | keyword | text | screenshots
 ### 2.1.0 ###
 * Changed plugin name to **Arabic Expressions**
 * Changed files names, functions names, variables and texts from `arabic symbols` to `arabic expressions`
+* Added readme.md for GitHub + included screenshots
+* Some changes to readme
 
 ### 2.0.0 ###
 * First release of **Arabic Symbols**. It is a fork of the plugin [Font Emoticons](https://wordpress.org/plugins/font-emoticons/) version 1.4.1.
