@@ -3,7 +3,7 @@ Contributors: ahlsunnah
 Tags: arabic expressions, arabic symbols, islamic expressions, islamic symbols
 Requires at least: 3.0.0
 Tested up to: 4.6.1
-Stable tag: 2.1.1
+Stable tag: 2.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -160,6 +160,9 @@ to this code:
 1. `mu7tawiyat` : المحتويات
 
 == Changelog ==
+
+= 2.1.2 =
+* Removed screenshots from repository to make the package lighter
 
 = 2.1.1 =
 * Some fixes for composer.json
