@@ -11,7 +11,9 @@
             "homepage": "http://github.com/ahlsunnah"
         }
     ],
-    "keywords": "wordpress",
+    "keywords": [
+        "wordpress"
+    ],
     "support": {
       "issues": "http://github.com/ahlsunnah/arabic-expressions/issues"
     },
