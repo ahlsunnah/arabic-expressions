@@ -2,13 +2,13 @@
 # Arabic Expressions #
 ## بسم الله الرحمن الرحيم ##
 ## Wordpress Information
-Contributors: ahlsunnah
-Tags: arabic expressions, islam
-Requires at least: 3.0.0
-Tested up to: 4.6.1
-Stable tag: 2.1.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+- Contributors: ahlsunnah
+- Tags: arabic expressions, arabic symbols, islamic expressions, islamic symbols
+- Requires at least: 3.0.0
+- Tested up to: 4.6.1
+- Stable tag: 2.1.0
+- License: GPLv2 or later
+- License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Include arabic expressions to be added to posts easily.
 
@@ -18,11 +18,11 @@ This WordPress plugin adds [KFGQPC Arabic Symbols](http://fonts.qurancomplex.gov
 
 ### How to use ? ###
 
-Just insert keyword of the arabic expression that you want in your post / page and enjoy !
+Just insert the keyword of the arabic expression that you want in your post or page and enjoy !
 
 > Example : `basmallah3`
 
-The Available expressions can be viewed in the *Screenshots* section.
+The Available expressions can be viewed in the <a href="#user-content-screenshots">Screenshots</a> section.
 
 ### Notes ###
 

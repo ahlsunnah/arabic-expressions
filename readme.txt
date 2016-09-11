@@ -1,6 +1,6 @@
 === Arabic Expressions ===
 Contributors: ahlsunnah
-Tags: arabic expressions, islam
+Tags: arabic expressions, arabic symbols, islamic expressions, islamic symbols
 Requires at least: 3.0.0
 Tested up to: 4.6.1
 Stable tag: 2.1.0
@@ -16,7 +16,7 @@ This WordPress plugin adds [KFGQPC Arabic Symbols](http://fonts.qurancomplex.gov
 
 = How to use ? =
 
-Just insert keyword of the arabic expression that you want in your post / page and enjoy !
+Just insert the keyword of the arabic expression that you want in your post or page and enjoy !
 
 > Example : `basmallah3`
 

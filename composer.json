@@ -12,7 +12,11 @@
         }
     ],
     "keywords": [
-        "wordpress"
+        "wordpress",
+        "arabic expressions",
+        "arabic symbols",
+        "islamic expressions",
+        "islamic symbols"
     ],
     "support": {
       "issues": "http://github.com/ahlsunnah/arabic-expressions/issues"
